@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DebugGames</title>
+<link rel="stylesheet" type="text/css" href="../scripts/styles.css">
+<script src="../scripts/script.js"></script>
+<link rel="shortcut icon" type+"image/png" href="../images/favicon.png">
+</head>
+<body>
+	<nav>
+    	<li class="noselect" onClick="displayArticle('da','a02','a01')">Home</li>
+    	<li class="noselect" onClick="displayArticle('a01','a02','da')">Projects</li>
+        <li class="noselect" onClick="displayArticle('a02','a01','da')">Contact</li>
+    </nav>
+	<header class="noselect">
+    	<h1>Debug Games</h1>
+		<img class="logo" src="../images/logo.png" width="100" alt="">
+    </header>
+    <main>
+    	<div>
+            <article id="da">
+                <h3>Home Page</h3>
+                <p>Basic Information</p>
+                <ol>Name: Michal Staszak</ol>
+                <ol>Age: 16</ol>
+                <ol>Game Engine: Unity</ol>
+                <ol>Languages: C#, JS, HTML, CSS, Python</ol>
+                <ol>Modeling Software: Blender, AD Inventor</ol>
+                
+                <p>PC Specs</p>
+                <ol>Ryzen 3 1300x @3.8ghz</ol>
+                <ol>Asrock AB350M</ol>
+                <ol>8GB Corsair Dominator Platinum</ol>
+                <ol>GTX 1050ti 4GB</ol>
+                <ol>Corsair 450W PSU</ol>
+                <ol>2TB HDD, 480GB SSD, 60GB SSD</ol>
+                
+                <p>Peripherals</p>
+                <ol>Corsair K55 RGB Keyboard</ol>
+                <ol>Corsair Harpoon RGB Mouse</ol>
+                <ol>AOC 21.5" Monitor @75Hz</ol>
+                <ol> Edge10 19" Monitor</ol>
+                <ol>Trust Mini Speakers</ol>
+                <div class="slideDiv">
+                <section id="slideshow" class="slide">
+                	<img class="mySlides" src="../images/specs.jpg" height="550" alt=""/>
+                	<img class="mySlides" src="../images/peripherials.jpg" height="500" alt=""/>
+                	<img class="mySlides" src="../images/html.jpg" height="500" alt=""/>
+                	<img class="mySlides" src="../images/unity.jpg" height="550" alt=""/>
+                	<img class="mySlides" src="../images/blender.jpg" height="550" alt=""/>
+                	<button class="slideButtonLeft" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="slideButtonRight" onclick="plusDivs(+1)">&#10095;</button>
+                </section>
+                </div>
+                
+            </article>
+            
+            <article id="a01">
+                <h3>Projects</h3>
+                
+                <li class="noselect" onClick="displayArticle('bd','sr','wl')">Block Drop</li>
+                <li class="noselect" onClick="displayArticle('sr','bd','wl')">Space Race</li>
+                <li class="noselect" onClick="displayArticle('wl','sr','bd')">The Wasteland</li>
+                
+                <article id="bd">
+                <section>
+                <img src="../images/bd3.png" width="800" alt="" style="float:right">
+                <h2>Block Drop</h2>
+                <p>Block Drop was a proof of concept, and was never meant to be released to the public. The game was proof that I could write my own code, and follow a specific design to the end. The models and animations were not mine and were taken from <a href="https://www.mixamo.com" target="_blank">mixamo.com</a> to see if I could implement animations. The game was created for mobile but an old PC version of the game can be downloaded <a href="http://www.mediafire.com/file/d08vzlldwipu3i6/BlockDropPrototype.zip/file" target="_blank"> here</a>.</p>
+               </section> 
+               </article>
+               
+               <article id="sr">
+               <section>  
+                <img src="../images/sr2.png" width="400" alt="" style="float:right">
+                <h2>Space Race</h2>
+                
+                <p>Space Race was proof that I can improve upon my old code and model my own player models and obsticles. The game was heavily inspired by Block Drop and the mechinics are identical, however the code is new and bug free, unlike block drop. This was my frist use of the unity particle system, so my knowledge of the system was very limited. There is no PC version of this game, however the apk for android can be downloaded <a href="http://www.mediafire.com/file/h5djcf4schzqldd/SpaceRace.apk/file" target="_blank">here</a>.</p>    
+               </section> 
+               </article>
+               
+               <article id="wl">
+               <section>
+                <h2>The Wasteland</h2>
+                <img src="../images/wl.png" width="800" alt="" style="float:right">
+                <p>The Wasteland is a very ambitious project for myself, since I develop games on my own. The game is fallout 1 and 2 ispired, with the top-down isometric view and a ruined world theme. The foundation of the game is based on a youtube series made by <a href="https://www.youtube.com/user/Brackeys" target="_blank">Brackeys</a>  and <a href="https://www.youtube.com/user/Cercopithecan" target="_blank">Sebastian Lague</a>, however many things were changed and added to make the game feel unique. This game is not finished and an ETA of release is unkown as a lot of work is still to be done. An early prototype of the game can be download <a href="https://www.mediafire.com/file/g04f1tcbc8rbrhf/The_Wastleland_ea05b.zip/file" target="_blank"> here</a>.</p>
+                
+                </section>
+            	</article>
+            </article>
+            
+            <article id="a02">
+                <h3>Contact</h3>
+                <form class="contact-form" action="contactform.php" method="post">
+                	<input type="text" name="name" placeholder="Your Name"><br>
+                	<input type="text" name="mail" placeholder="Your e-mail"><br>
+                	<input type="text" name="subject" placeholder="Subject"><br>
+                	<textarea name="message" placeholder="Message"></textarea><br>
+                	<button tpye="submit" name="submit">Send Mail</button><br>
+                </form>
+            </article>
+    	</div>
+    </main>
+</body>
+<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}</script>
+</html>

@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+html{
+	background-color:#4E4E4E;	
+}
+header{
+	background-color:#333333;
+	margin:-8px;
+	padding-bottom:50px;
+}
+div{
+	margin-top:40px;
+	margin-left:30px;
+	margin-right:30px;	
+}
+nav{
+	display:inline;
+	float:right;
+	margin-top:20px;
+}
+input{
+	padding:3px;
+	width:200px;
+	font-size:30px;
+	background-color:#A6A6A6;
+	color:#424242;
+	border:none;
+	margin:10px;
+	border-radius:2px;
+	text-align: center;
+}
+textarea{
+	padding-bottom:200px;
+	padding-right:10px;
+	font-size:30px;
+	background-color:#A6A6A6;
+	color:#424242;
+	border:none;
+	margin:10px;
+	border-radius:2px;
+}
+form{
+	text-align:center;
+}
+button{
+	border:none;
+	padding:20px;
+	background-color:#A6A6A6;
+	color:#424242;
+	border-radius:2px;
+	margin:10px;
+}
+#da ,#bd{
+	display:block;	
+}
+#a01, #a02, #sr, #wl{
+	display:none;	
+}
+h1{
+	font-size:80px;
+	margin-top:0px;
+	padding-left:20px;
+	color:#737373;
+}
+h2{
+	font-size:50px;
+	padding-left:20px;
+	color:#737373;
+}
+h3{
+	font-size:30px;
+	padding-left:20px;
+	color:#737373;
+}
+p{
+	color:#737373;
+	font-size:30px;
+}
+a{
+	color:#737373;
+}
+li{
+	display:inline;
+	text-decoration:none;
+	list-style-type:none;
+	font-weight:bold;
+	background-color:#737373;
+	padding-right:30px;
+	padding-left:30px;
+	margin:10px;
+	font-size:30px;	
+	border-radius:2px;
+}
+li:hover{
+	background-color:#464646;
+	color:#737373;
+	box-shadow: black 3px 3px;
+}
+li:active{
+	background-color:#262626;
+	box-shadow: black 5px 5px;
+}
+.homeImg{
+	float:right;
+	position:relative;
+	top:-200px;
+	right:500px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.slideButtonLeft{
+	position:absolute;
+	top:35%;
+	left:0;
+	background-color:#6F6F6F;
+	width:50px;
+	height:200px;
+	color:#D3D3D3;
+	border-radius:3px;
+	border:none;
+}
+.slideButtonRight{
+	position:absolute;
+	top:35%;
+	right:0;
+	background-color:#6F6F6F;
+	width:50px;
+	height:200px;
+	color:#D3D3D3;
+	border-radius:3px;
+	border:none;
+}
+.slideButtonLeft:hover{
+	background-color:#A0A0A0;
+	color:#4B4B4B;	
+}
+.slideButtonRight:hover{
+	background-color:#A0A0A0;
+	color:#4B4B4B;	
+}
+.slide{
+	position:relative;
+	top:100px;	
+	left:55px;
+}
+.slideDiv{
+	float:right;
+	position:relative;
+	top:-900px;
+	right:10%;
+}
+.logo{
+	position:relative;
+	left:1%;
+}
